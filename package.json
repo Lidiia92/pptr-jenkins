@@ -1,25 +1,26 @@
 {
-  "name": "pptr-jenkins",
-  "version": "1.0.0",
-  "description": "CI / CD with Pupeteer and Jenkins",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lidiia92/pptr-jenkins.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lidiia92/pptr-jenkins/issues"
-  },
-  "homepage": "https://github.com/Lidiia92/pptr-jenkins#readme",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.0.1",
-    "prettier": "^2.0.5",
-    "puppeteer": "^4.0.0"
-  }
+	"name": "pptr-jenkins",
+	"version": "1.0.0",
+	"description": "CI / CD with Pupeteer and Jenkins",
+	"main": "index.js",
+	"scripts": {
+		"e2e-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e.test.js",
+		"smoke-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lidiia92/pptr-jenkins.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Lidiia92/pptr-jenkins/issues"
+	},
+	"homepage": "https://github.com/Lidiia92/pptr-jenkins#readme",
+	"dependencies": {
+		"chai": "^4.2.0",
+		"mocha": "^8.0.1",
+		"prettier": "^2.0.5",
+		"puppeteer": "^4.0.0"
+	}
 }
