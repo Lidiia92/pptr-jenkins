@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-describe('Smoke Tests', () => {
+describe('Smoke Tests', function () {
 	it('should load website', async () => {
 		let browser = await puppeteer.launch({ headless: true });
 		let page = await browser.newPage();
